@@ -1,0 +1,18 @@
+{
+  "products": [
+    {
+       "id": 1,
+       "productName": "OFM Essentials Racecar-Style Leather Gaming Chair, Multiple Colors",
+       "productImageUrl": "https://i5.walmartimages.com/asr/66fae1aa-d8bc-4089-8554-c1b1fc0c6d92_1.a18ee650ed91efecab34d94b75a5ba0a.jpeg?odnHeight=100&odnWidth=100&odnBg=FFFFFF",
+       "actualColors": ["black","grey"],
+       "productPrice": "115.00",
+       "productQty": 1
+    }
+  ],
+  "productPromoCodes": [
+    {
+      "promoCode": "DISCOUNT",
+      "discountPercentage": 10
+    }
+  ]
+}

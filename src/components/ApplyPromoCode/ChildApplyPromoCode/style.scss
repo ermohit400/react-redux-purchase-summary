@@ -1,0 +1,26 @@
+.child_see_item_details {
+  padding-top: 10px;
+  margin-top: 8px;
+  border-top: 1px solid #e6e7e8;
+  overflow: hidden;
+}
+.promocode-input{
+  display: inline-block;
+  background: #fff;
+    border-radius: 0;
+    border: none;
+    color: #000;
+    line-height: 1.375;
+    margin: 0;
+    transition: box-shadow .2s;
+    box-shadow: inset 0 -2px 0 0 #9d9fa2;
+}
+.promocode-btn{
+    display: inline-block;
+    border-radius: 100px;
+    font-weight: bold;
+    padding: 5px;
+    background-color: #fff;
+    border: 1px solid currentColor;
+    color: #000;
+}
