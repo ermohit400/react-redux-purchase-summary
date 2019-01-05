@@ -1,5 +1,5 @@
 
-## Available Scripts
+## react redux based order purchase summary
 
 In the project directory, you can run:
 
