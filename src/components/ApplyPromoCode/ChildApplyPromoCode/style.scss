@@ -4,9 +4,15 @@
   border-top: 1px solid #e6e7e8;
   overflow: hidden;
 }
-.promocode-input{
-  display: inline-block;
-  background: #fff;
+
+
+.promocode-wrap{
+  display: block;
+  float: left;
+  padding-left: 20px;
+  .promocode-input{
+    display: inline-block;
+    background: #fff;
     border-radius: 0;
     border: none;
     color: #000;
@@ -14,13 +20,16 @@
     margin: 0;
     transition: box-shadow .2s;
     box-shadow: inset 0 -2px 0 0 #9d9fa2;
-}
-.promocode-btn{
-    display: inline-block;
-    border-radius: 100px;
-    font-weight: bold;
-    padding: 5px;
-    background-color: #fff;
-    border: 1px solid currentColor;
-    color: #000;
+
+  }
+  .promocode-btn{
+      display: inline-block;
+      border-radius: 100px;
+      font-weight: bold;
+      padding: 5px;
+      background-color: #fff;
+      border: 1px solid currentColor;
+      color: #000;
+          margin-left: 10px;
+  }
 }
