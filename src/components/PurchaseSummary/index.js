@@ -16,11 +16,12 @@ class PurchaseSummary extends Component{
   }
 
   render(){
-    const product = this.props.data.products;
+    const product = this.props.simpleReducer.products;
+    const promocodes = this.props.simpleReducer.promocodes;
     return(
       <div className="container_purchase_summary">
         <PickupSavings product={product}/>
-        <EstimatedTotal product={product}/>
+        <EstimatedTotal product={product} promocodes={promocodes}/>
         <SeeItemDetails product={product}/>
         <ApplyPromoCode/>
       </div>
@@ -30,5 +31,4 @@ class PurchaseSummary extends Component{
 
 const mapStateToProps = state => ({...state})
 const mapDispatchToProps = { getProduct }
-
 export default connect(mapStateToProps, mapDispatchToProps)(PurchaseSummary);

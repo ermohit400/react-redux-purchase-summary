@@ -1,15 +1,18 @@
-export default (state = {}, action) => {
+import { actionTypes } from "../actions/actionTypes";
+export default function (state = {
+  products: {},
+  promocodes: {}
+}, action) {
 
- switch (action.type) {
-  case 'APPLY_PROMOCODE':
-   return {
-    result: action.payload
+const newState = state;
+  switch (action.type) {
+    case actionTypes.GET_PRODUCT:
+      state.products = action.payload;
+      return Object.assign({}, state, newState);
+    case actionTypes.APPLY_PROMOCODE:
+      state.promocodes = action.payload;
+      return Object.assign({}, state, newState)
+    default:
+      return state;
    }
-   case 'GET_PRODUCT':
-    return {
-     products: action.payload
-    }
-  default:
-   return state
- }
 }
